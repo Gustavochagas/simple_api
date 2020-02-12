@@ -1,0 +1,45 @@
+Arguments: 
+  /home/gustavo_chagas/.nvm/versions/node/v12.13.0/bin/node /usr/share/yarn/bin/yarn.js dev
+
+PATH: 
+  /home/gustavo_chagas/.nvm/versions/node/v12.13.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.13.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/gustavo_chagas/Documents/omnistack/backend/package.json: Unexpected token } in JSON at position 151
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "backend",
+      "version": "1.0.0",
+      "main": "index.js",
+      "license": "MIT",
+      "scripts": {
+          "dev": "nodemon index.js",
+      },
+      "dependencies": {
+          "express": "^4.17.1"
+      },
+      "devDependencies": {
+          "nodemon": "^2.0.2"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
